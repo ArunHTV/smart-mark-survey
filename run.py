@@ -1,3 +1,9 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+# Input for users name
+
+name = input("What is your name? ")
+print("Hello, " + name + str(". Thank you for taking my quiz."))
+
+# Input for users age
+
+age = input("How old are you? ")
+print("Thank you for providing your age, " + age + str("."))
