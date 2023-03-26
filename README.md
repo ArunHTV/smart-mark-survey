@@ -1,6 +1,6 @@
 # Smart Mark Survey
 
-Smart Mark Survey is a short survey featuring wrestling-related questions. It requires the user's input, which is then commented on by the program, usually in a way that mocks the user's choices. The choices are then exported to a txt file that collates the data in a legible format. The concept was inspired by many real-life interactions I've personally come across betweens alleged 'fans' on the Internet.
+Smart Mark Survey is a short survey featuring wrestling-related questions. It requires the user's input, which is then commented on by the program, usually in a way that mocks the user's choices. The choices are then exported to a txt file that collates the data in a legible format. The concept was inspired by many real-life interactions I've personally come across betweens alleged 'fans' on the Internet (smart mark being a term that refers to fans who think their wrestling knowledge and preferences is/are superior to anyone elses).
 
 ## Save User's Input
 
