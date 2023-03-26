@@ -1,5 +1,6 @@
 # Open text file to save user's input
 file = open("user_data.txt", "w")
+print("\nSmark Mark Survey, a survey all about wrestling. But first..\n")
 
 
 # Input for users name and age
