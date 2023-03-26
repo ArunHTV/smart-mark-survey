@@ -1,31 +1,29 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Smart Mark Survey
 
-Welcome ArunHTV,
+Smart Mark Survey is a short survey featuring wrestling-related questions. It requires the user's input, which is then commented on by the program, usually in a way that mocks the user's choices. The choices are then exported to a txt file that collates the data in a legible format. The concept was inspired by many real-life interactions I've personally come across betweens alleged 'fans' on the Internet.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Save User's Input
 
-## Reminders
+The first step in my code is to open a text file to save the user's input. The open() function is used to create a file object and the "w" argument indicates that the file is opened for writing.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## User's Details
 
-## Creating the Heroku app
+The script prompts the user to enter their name and age using the input() function. The print() function is used to display a message to the user and the "-" * 80 expression generates a line of 80 hyphens to create a separator. The seperator is also reused in the survery question code. The user's name and age are saved to the text file using the file.write() method.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Quiz Questions
 
-1. `heroku/python`
-2. `heroku/nodejs`
+The script asks the user several questions related to wrestling using the input() function. Similar to the previous step, the print() function displays a message to the user with a separator line. The user's answers are saved to the text file using the file.write() method. Below, you can see the code for the first question.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+As you can see, the question's use the input method, ready to receive the user's data. The print function then displays a message that refers to the user's answer, as well as a comment about the answer. Both of these lines of code are seperated visually using the hyphen seperators used on the user details code. The answer is then written to the user_date text file opened at the beginning.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+The code is fairly similar throughout the questions though certain methods have been implemented to give the user a more immersive experience. In the code below (used for question six), the print statement after the input functon contains a sentence, displays the user's answer and then uses the str() function which then allows me to include a string. Using this string, I can then create another sentence after displaying the users data, so for example, if your name is Dan and your dream match is Kenny Omega vs Roman Reigns, the output will be "Hmm. Kenny Omega vs Roman Reigns. Not bad indeed.", I have written it like this so the program plays out like a conversation rather than a generic output such as "Your answer was etc.", for example.
 
-Connect your GitHub repository and deploy as normal.
+## Close Text File
 
-## Constraints
+After all the questions are answered, the text file is closed using the file.close() method. The script then displays a print message to confirm to the user that their answers have been collated.
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Testing
 
------
-Happy coding!
+- code put through PEP8 Python Validator. 'All clear, no errors found'
+- tested locally on GitPod Terminal
+- tested deployed version on Heroku
